@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You'll know the weather updates on different countries">
+    <meta name="keywords" content="Weather, Cities, Countries">
+    <meta name="author" content="Reynaldo Perez Pauli">
+    <link rel="icon" href="./clouds.ico">
+    <link rel="stylesheet" href="./pages/page.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <header class="header">
+                <input type="search" placeholder="Enter city or country" class="header__input" name="Searchm">
+                <button class="header__button"><img src="./images/search.png"></button>
+            </header>
+
+            <main class="weather weather_display_none">
+                <img src="./images/clouds.png" alt="Sunny" class="weather__image">
+                <h1 class="weather__temperature">87&deg;F</h1>
+                <h2 class="weather__city">Olathe</h2>
+            </main>
+
+            <footer class="footer footer_display_none">
+                <section class="footer__container">
+                    <img src="./images/humidity.png" alt="humidity" class="footer__image">
+
+                    <div class="footer__value-container">
+                        <h3 class="footer__value footer__value_humidity">48%</h3>
+                        <p class="footer__title">Humidity</p>
+                    </div>
+                </section>
+
+                <section class="footer__container">
+                    <img src="./images/wind.png" alt="wind" class="footer__image">
+
+                    <div class="footer__value-container">
+                        <h3 class="footer__value footer__value_wind">10.29 km/h</h3>
+                        <p class="footer__title">Wind Speed</p>
+                    </div>
+                </section>
+            </footer>
+        </div>
+        <p class="page__error-message page__error-message_display_none">Invalid City Name</p>
+        <p class="page__copyright">&#169; 2023 Reynaldo Perez Pauli</p>
+    </div>
+
+    <script src="./scripts/script.js">
+
+    </script>
+</body>
+</html>

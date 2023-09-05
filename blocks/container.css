@@ -1,0 +1,31 @@
+@keyframes shadow {
+    0%{
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+    25%{
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+    }
+    50%{
+        box-shadow: 0px 0px 90px rgba(255, 255, 255, 0.5);
+    }
+    75%{
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+    }
+    100%{
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.container{
+    background-image: linear-gradient(to bottom, rgb(39, 160, 162), rgb(17, 111, 166));
+    border-radius: 20px;
+    padding:  40px 20px 20px 20px;
+    animation: shadow infinite 5s ease-in-out;
+    width: 350px;
+}
+
+@media screen and (max-width: 420px){
+    .container{
+        width: 250px;
+    }
+}

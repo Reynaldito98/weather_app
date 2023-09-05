@@ -1,0 +1,20 @@
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather_display_none{
+    display: none;
+}
+
+.weather__temperature{
+    margin: 0;
+    padding: 0;
+    font-size: 68px;
+    font-weight: 500;
+}
+
+.weather__city{
+    margin: 0;
+}
